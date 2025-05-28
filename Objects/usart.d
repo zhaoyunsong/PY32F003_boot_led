@@ -1,0 +1,20 @@
+.\objects\usart.o: ..\Src\usart.c
+.\objects\usart.o: ..\Inc\main.h
+.\objects\usart.o: ..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_ll_rcc.h
+.\objects\usart.o: ..\..\..\..\..\..\Drivers\CMSIS\Device\PY32F0xx\Include\py32f0xx.h
+.\objects\usart.o: ..\..\..\..\..\..\Drivers\CMSIS\Device\PY32F0xx\Include\py32f003x8.h
+.\objects\usart.o: ..\..\..\..\..\..\Drivers\CMSIS\Include\core_cm0plus.h
+.\objects\usart.o: D:\Program Files\Keil\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
+.\objects\usart.o: ..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmInstr.h
+.\objects\usart.o: ..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h
+.\objects\usart.o: ..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h
+.\objects\usart.o: ..\..\..\..\..\..\Drivers\CMSIS\Device\PY32F0xx\Include\system_py32f0xx.h
+.\objects\usart.o: ..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_ll_bus.h
+.\objects\usart.o: ..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_ll_system.h
+.\objects\usart.o: ..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_ll_cortex.h
+.\objects\usart.o: ..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_ll_utils.h
+.\objects\usart.o: ..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_ll_pwr.h
+.\objects\usart.o: ..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_ll_dma.h
+.\objects\usart.o: ..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_ll_gpio.h
+.\objects\usart.o: ..\Inc\usart.h
+.\objects\usart.o: ..\Inc\wdg.h

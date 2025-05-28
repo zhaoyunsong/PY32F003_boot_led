@@ -1,0 +1,14 @@
+{
+    "folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"flash.h": "c",
+			"py32f003xx_ll_start_kit.h": "c"
+		}
+	},
+    "extensions": {}
+}

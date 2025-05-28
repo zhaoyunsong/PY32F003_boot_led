@@ -1,0 +1,22 @@
+.\objects\bootloader.o: ..\Src\bootloader.c
+.\objects\bootloader.o: ..\Inc\main.h
+.\objects\bootloader.o: ..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_ll_rcc.h
+.\objects\bootloader.o: ..\..\..\..\..\..\Drivers\CMSIS\Device\PY32F0xx\Include\py32f0xx.h
+.\objects\bootloader.o: ..\..\..\..\..\..\Drivers\CMSIS\Device\PY32F0xx\Include\py32f003x8.h
+.\objects\bootloader.o: ..\..\..\..\..\..\Drivers\CMSIS\Include\core_cm0plus.h
+.\objects\bootloader.o: D:\Program Files\Keil\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
+.\objects\bootloader.o: ..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmInstr.h
+.\objects\bootloader.o: ..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h
+.\objects\bootloader.o: ..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h
+.\objects\bootloader.o: ..\..\..\..\..\..\Drivers\CMSIS\Device\PY32F0xx\Include\system_py32f0xx.h
+.\objects\bootloader.o: ..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_ll_bus.h
+.\objects\bootloader.o: ..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_ll_system.h
+.\objects\bootloader.o: ..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_ll_cortex.h
+.\objects\bootloader.o: ..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_ll_utils.h
+.\objects\bootloader.o: ..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_ll_pwr.h
+.\objects\bootloader.o: ..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_ll_dma.h
+.\objects\bootloader.o: ..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_ll_gpio.h
+.\objects\bootloader.o: ..\Inc\bootloader.h
+.\objects\bootloader.o: ..\Inc\usart.h
+.\objects\bootloader.o: ..\Inc\flash.h
+.\objects\bootloader.o: ..\Inc\wdg.h
