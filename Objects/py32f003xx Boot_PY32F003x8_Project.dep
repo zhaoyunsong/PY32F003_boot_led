@@ -10,7 +10,7 @@ I (..\..\..\..\..\..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x67AEE15B)
 I (..\..\..\..\..\..\Drivers\CMSIS\Include\core_cmFunc.h)(0x67AEE15B)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\PY32F0xx\Include\system_py32f0xx.h)(0x67AEE15B)
 F (.\startup_py32f003xx.s)(0x6433A217)(--cpu Cortex-M0+ -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_PY32F003x8_Project-I"D:\Program Files\Keil\ARM\CMSIS\6.1.0\CMSIS\Core\Include"-I"D:\Program Files\Keil\Puya\PY32F0xx_DFP\1.2.2\Drivers\CMSIS\Device\PY32F0xx\Include"-I"D:\Program Files\Keil\Puya\PY32F0xx_DFP\1.2.2\Device\Include"--pd "__UVISION_VERSION SETA 541" --pd "_RTE_ SETA 1"--list .\listings\startup_py32f003xx.lst --xref -o .\objects\startup_py32f003xx.o --depend .\objects\startup_py32f003xx.d)
-F (..\Src\main.c)(0x68334FBA)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\CMSIS\Include -I ..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc -I ..\Inc -I ..\..\..\..\..\..\Drivers\CMSIS\Device\PY32F0xx\Include -I ..\..\..\..\..\..\Drivers\BSP\PY32F003xx_Start_Kit-I.\RTE\_PY32F003x8_Project-I"D:\Program Files\Keil\ARM\CMSIS\6.1.0\CMSIS\Core\Include"-I"D:\Program Files\Keil\Puya\PY32F0xx_DFP\1.2.2\Drivers\CMSIS\Device\PY32F0xx\Include"-I"D:\Program Files\Keil\Puya\PY32F0xx_DFP\1.2.2\Device\Include"-D__UVISION_VERSION="541" -D_RTE_ -DPY32F003x8 -DUSE_FULL_LL_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (..\Src\main.c)(0x683A7EE5)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\CMSIS\Include -I ..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc -I ..\Inc -I ..\..\..\..\..\..\Drivers\CMSIS\Device\PY32F0xx\Include -I ..\..\..\..\..\..\Drivers\BSP\PY32F003xx_Start_Kit-I.\RTE\_PY32F003x8_Project-I"D:\Program Files\Keil\ARM\CMSIS\6.1.0\CMSIS\Core\Include"-I"D:\Program Files\Keil\Puya\PY32F0xx_DFP\1.2.2\Drivers\CMSIS\Device\PY32F0xx\Include"-I"D:\Program Files\Keil\Puya\PY32F0xx_DFP\1.2.2\Device\Include"-D__UVISION_VERSION="541" -D_RTE_ -DPY32F003x8 -DUSE_FULL_LL_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (..\Inc\main.h)(0x64A22EAB)
 I (..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_ll_rcc.h)(0x67AEE15B)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\PY32F0xx\Include\py32f0xx.h)(0x67AEE15B)
@@ -28,13 +28,13 @@ I (..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_ll_utils.h)(0x67AE
 I (..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_ll_pwr.h)(0x67AEE15B)
 I (..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_ll_dma.h)(0x67AEE15B)
 I (..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_ll_gpio.h)(0x6829505E)
-I (..\Inc\bootloader.h)(0x68334E73)
+I (..\Inc\bootloader.h)(0x68373610)
 I (..\Inc\flash.h)(0x64FEB137)
 I (..\..\..\..\..\..\Drivers\BSP\PY32F003xx_Start_Kit\py32f003xx_ll_Start_Kit.h)(0x6829F97D)
 I (D:\Program Files\Keil\ARM\ARM_Compiler_5.06u7\include\stdio.h)(0x5E8E3CC2)
 I (..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_ll_exti.h)(0x67AEE15B)
 I (..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_ll_usart.h)(0x67AEE15B)
-F (..\Src\bootloader.c)(0x68335098)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\CMSIS\Include -I ..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc -I ..\Inc -I ..\..\..\..\..\..\Drivers\CMSIS\Device\PY32F0xx\Include -I ..\..\..\..\..\..\Drivers\BSP\PY32F003xx_Start_Kit-I.\RTE\_PY32F003x8_Project-I"D:\Program Files\Keil\ARM\CMSIS\6.1.0\CMSIS\Core\Include"-I"D:\Program Files\Keil\Puya\PY32F0xx_DFP\1.2.2\Drivers\CMSIS\Device\PY32F0xx\Include"-I"D:\Program Files\Keil\Puya\PY32F0xx_DFP\1.2.2\Device\Include"-D__UVISION_VERSION="541" -D_RTE_ -DPY32F003x8 -DUSE_FULL_LL_DRIVER-o .\objects\bootloader.o --omf_browse .\objects\bootloader.crf --depend .\objects\bootloader.d)
+F (..\Src\bootloader.c)(0x6837BC97)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\CMSIS\Include -I ..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc -I ..\Inc -I ..\..\..\..\..\..\Drivers\CMSIS\Device\PY32F0xx\Include -I ..\..\..\..\..\..\Drivers\BSP\PY32F003xx_Start_Kit-I.\RTE\_PY32F003x8_Project-I"D:\Program Files\Keil\ARM\CMSIS\6.1.0\CMSIS\Core\Include"-I"D:\Program Files\Keil\Puya\PY32F0xx_DFP\1.2.2\Drivers\CMSIS\Device\PY32F0xx\Include"-I"D:\Program Files\Keil\Puya\PY32F0xx_DFP\1.2.2\Device\Include"-D__UVISION_VERSION="541" -D_RTE_ -DPY32F003x8 -DUSE_FULL_LL_DRIVER-o .\objects\bootloader.o --omf_browse .\objects\bootloader.crf --depend .\objects\bootloader.d)
 I (..\Inc\main.h)(0x64A22EAB)
 I (..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_ll_rcc.h)(0x67AEE15B)
 I (..\..\..\..\..\..\Drivers\CMSIS\Device\PY32F0xx\Include\py32f0xx.h)(0x67AEE15B)
@@ -52,7 +52,7 @@ I (..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_ll_utils.h)(0x67AE
 I (..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_ll_pwr.h)(0x67AEE15B)
 I (..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_ll_dma.h)(0x67AEE15B)
 I (..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_ll_gpio.h)(0x6829505E)
-I (..\Inc\bootloader.h)(0x68334E73)
+I (..\Inc\bootloader.h)(0x68373610)
 I (..\Inc\usart.h)(0x606BCCA5)
 I (..\Inc\flash.h)(0x64FEB137)
 I (..\Inc\wdg.h)(0x6093972F)
@@ -76,7 +76,7 @@ I (..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_ll_dma.h)(0x67AEE1
 I (..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc\py32f0xx_ll_gpio.h)(0x6829505E)
 I (..\Inc\flash.h)(0x64FEB137)
 I (..\Inc\usart.h)(0x606BCCA5)
-I (..\Inc\bootloader.h)(0x68334E73)
+I (..\Inc\bootloader.h)(0x68373610)
 I (..\Inc\wdg.h)(0x6093972F)
 F (..\Src\usart.c)(0x643760BC)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc -I ..\..\..\..\..\..\Drivers\CMSIS\Include -I ..\..\..\..\..\..\Drivers\PY32F0xx_HAL_Driver\Inc -I ..\Inc -I ..\..\..\..\..\..\Drivers\CMSIS\Device\PY32F0xx\Include -I ..\..\..\..\..\..\Drivers\BSP\PY32F003xx_Start_Kit-I.\RTE\_PY32F003x8_Project-I"D:\Program Files\Keil\ARM\CMSIS\6.1.0\CMSIS\Core\Include"-I"D:\Program Files\Keil\Puya\PY32F0xx_DFP\1.2.2\Drivers\CMSIS\Device\PY32F0xx\Include"-I"D:\Program Files\Keil\Puya\PY32F0xx_DFP\1.2.2\Device\Include"-D__UVISION_VERSION="541" -D_RTE_ -DPY32F003x8 -DUSE_FULL_LL_DRIVER-o .\objects\usart.o --omf_browse .\objects\usart.crf --depend .\objects\usart.d)
 I (..\Inc\main.h)(0x64A22EAB)

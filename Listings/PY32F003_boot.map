@@ -22,6 +22,7 @@ Section Cross References
     main.o(i.main) refers to main.o(i.Set_PB5_Level) for Set_PB5_Level
     bootloader.o(i.APP_SystemClockConfig) refers to py32f0xx_ll_utils.o(i.LL_SetSystemCoreClock) for LL_SetSystemCoreClock
     bootloader.o(i.Bootloader_Init) refers to wdg.o(i.WDG_Init) for WDG_Init
+    bootloader.o(i.Bootloader_Init) refers to bootloader.o(i.JumpToAddress) for JumpToAddress
     bootloader.o(i.Bootloader_Init) refers to wdg.o(i.WDG_Refresh) for WDG_Refresh
     bootloader.o(i.Bootloader_Init) refers to bootloader.o(i.LL_GPIO_SetPinMode) for LL_GPIO_SetPinMode
     bootloader.o(i.Bootloader_Init) refers to bootloader.o(i.LL_GPIO_SetAFPin_0_7) for LL_GPIO_SetAFPin_0_7
@@ -243,46 +244,46 @@ Image Symbol Table
     i.BSP_PB_GetState                        0x080001ac   Section        0  py32f003xx_ll_start_kit.o(i.BSP_PB_GetState)
     i.BSP_PB_Init                            0x080001d0   Section        0  py32f003xx_ll_start_kit.o(i.BSP_PB_Init)
     i.Bootloader_Init                        0x08000288   Section        0  bootloader.o(i.Bootloader_Init)
-    i.Bootloader_ProtocolDetection           0x08000394   Section        0  bootloader.o(i.Bootloader_ProtocolDetection)
-    i.ExtendedErase                          0x080005a8   Section        0  bootloader.o(i.ExtendedErase)
-    i.GetAddressArea                         0x0800064c   Section        0  bootloader.o(i.GetAddressArea)
-    i.GetXOR                                 0x08000754   Section        0  bootloader.o(i.GetXOR)
-    i.Go                                     0x0800076c   Section        0  bootloader.o(i.Go)
-    i.JumpToAddress                          0x080007a8   Section        0  bootloader.o(i.JumpToAddress)
-    i.LL_GPIO_SetAFPin_0_7                   0x080007c8   Section        0  bootloader.o(i.LL_GPIO_SetAFPin_0_7)
-    LL_GPIO_SetAFPin_0_7                     0x080007c9   Thumb Code    26  bootloader.o(i.LL_GPIO_SetAFPin_0_7)
-    i.LL_GPIO_SetPinMode                     0x080007e2   Section        0  bootloader.o(i.LL_GPIO_SetPinMode)
-    LL_GPIO_SetPinMode                       0x080007e3   Thumb Code    20  bootloader.o(i.LL_GPIO_SetPinMode)
-    i.LL_GPIO_SetPinMode                     0x080007f6   Section        0  py32f003xx_ll_start_kit.o(i.LL_GPIO_SetPinMode)
-    LL_GPIO_SetPinMode                       0x080007f7   Thumb Code    20  py32f003xx_ll_start_kit.o(i.LL_GPIO_SetPinMode)
-    i.LL_GPIO_SetPinPull                     0x0800080a   Section        0  bootloader.o(i.LL_GPIO_SetPinPull)
-    LL_GPIO_SetPinPull                       0x0800080b   Thumb Code    20  bootloader.o(i.LL_GPIO_SetPinPull)
-    i.LL_GPIO_SetPinPull                     0x0800081e   Section        0  py32f003xx_ll_start_kit.o(i.LL_GPIO_SetPinPull)
-    LL_GPIO_SetPinPull                       0x0800081f   Thumb Code    20  py32f003xx_ll_start_kit.o(i.LL_GPIO_SetPinPull)
-    i.LL_IOP_GRP1_EnableClock                0x08000834   Section        0  py32f003xx_ll_start_kit.o(i.LL_IOP_GRP1_EnableClock)
-    LL_IOP_GRP1_EnableClock                  0x08000835   Thumb Code    18  py32f003xx_ll_start_kit.o(i.LL_IOP_GRP1_EnableClock)
-    i.LL_SetSystemCoreClock                  0x0800084c   Section        0  py32f0xx_ll_utils.o(i.LL_SetSystemCoreClock)
-    i.MassErase                              0x08000858   Section        0  flash.o(i.MassErase)
-    i.PageErase                              0x08000898   Section        0  flash.o(i.PageErase)
-    i.ReadMemory                             0x08000938   Section        0  bootloader.o(i.ReadMemory)
-    i.SectorErase                            0x08000a08   Section        0  flash.o(i.SectorErase)
-    i.Set_PB5_Level                          0x08000a68   Section        0  main.o(i.Set_PB5_Level)
-    i.SystemInit                             0x08000ab4   Section        0  system_py32f0xx.o(i.SystemInit)
-    i.USART_ReadByte                         0x08000ae0   Section        0  usart.o(i.USART_ReadByte)
-    i.USART_SendByte                         0x08000afc   Section        0  usart.o(i.USART_SendByte)
-    i.WDG_Init                               0x08000b10   Section        0  wdg.o(i.WDG_Init)
-    i.WDG_Refresh                            0x08000b40   Section        0  wdg.o(i.WDG_Refresh)
-    i.WriteMemory                            0x08000b60   Section        0  bootloader.o(i.WriteMemory)
-    i.__scatterload_null                     0x08000bf8   Section        2  handlers.o(i.__scatterload_null)
+    i.Bootloader_ProtocolDetection           0x080003b4   Section        0  bootloader.o(i.Bootloader_ProtocolDetection)
+    i.ExtendedErase                          0x080005c8   Section        0  bootloader.o(i.ExtendedErase)
+    i.GetAddressArea                         0x0800066c   Section        0  bootloader.o(i.GetAddressArea)
+    i.GetXOR                                 0x08000774   Section        0  bootloader.o(i.GetXOR)
+    i.Go                                     0x0800078c   Section        0  bootloader.o(i.Go)
+    i.JumpToAddress                          0x080007c8   Section        0  bootloader.o(i.JumpToAddress)
+    i.LL_GPIO_SetAFPin_0_7                   0x080007e8   Section        0  bootloader.o(i.LL_GPIO_SetAFPin_0_7)
+    LL_GPIO_SetAFPin_0_7                     0x080007e9   Thumb Code    26  bootloader.o(i.LL_GPIO_SetAFPin_0_7)
+    i.LL_GPIO_SetPinMode                     0x08000802   Section        0  bootloader.o(i.LL_GPIO_SetPinMode)
+    LL_GPIO_SetPinMode                       0x08000803   Thumb Code    20  bootloader.o(i.LL_GPIO_SetPinMode)
+    i.LL_GPIO_SetPinMode                     0x08000816   Section        0  py32f003xx_ll_start_kit.o(i.LL_GPIO_SetPinMode)
+    LL_GPIO_SetPinMode                       0x08000817   Thumb Code    20  py32f003xx_ll_start_kit.o(i.LL_GPIO_SetPinMode)
+    i.LL_GPIO_SetPinPull                     0x0800082a   Section        0  bootloader.o(i.LL_GPIO_SetPinPull)
+    LL_GPIO_SetPinPull                       0x0800082b   Thumb Code    20  bootloader.o(i.LL_GPIO_SetPinPull)
+    i.LL_GPIO_SetPinPull                     0x0800083e   Section        0  py32f003xx_ll_start_kit.o(i.LL_GPIO_SetPinPull)
+    LL_GPIO_SetPinPull                       0x0800083f   Thumb Code    20  py32f003xx_ll_start_kit.o(i.LL_GPIO_SetPinPull)
+    i.LL_IOP_GRP1_EnableClock                0x08000854   Section        0  py32f003xx_ll_start_kit.o(i.LL_IOP_GRP1_EnableClock)
+    LL_IOP_GRP1_EnableClock                  0x08000855   Thumb Code    18  py32f003xx_ll_start_kit.o(i.LL_IOP_GRP1_EnableClock)
+    i.LL_SetSystemCoreClock                  0x0800086c   Section        0  py32f0xx_ll_utils.o(i.LL_SetSystemCoreClock)
+    i.MassErase                              0x08000878   Section        0  flash.o(i.MassErase)
+    i.PageErase                              0x080008b8   Section        0  flash.o(i.PageErase)
+    i.ReadMemory                             0x08000958   Section        0  bootloader.o(i.ReadMemory)
+    i.SectorErase                            0x08000a28   Section        0  flash.o(i.SectorErase)
+    i.Set_PB5_Level                          0x08000a88   Section        0  main.o(i.Set_PB5_Level)
+    i.SystemInit                             0x08000ad4   Section        0  system_py32f0xx.o(i.SystemInit)
+    i.USART_ReadByte                         0x08000b00   Section        0  usart.o(i.USART_ReadByte)
+    i.USART_SendByte                         0x08000b1c   Section        0  usart.o(i.USART_SendByte)
+    i.WDG_Init                               0x08000b30   Section        0  wdg.o(i.WDG_Init)
+    i.WDG_Refresh                            0x08000b60   Section        0  wdg.o(i.WDG_Refresh)
+    i.WriteProtect                           0x08000b80   Section        0  bootloader.o(i.WriteProtect)
+    i.__scatterload_null                     0x08000bf0   Section        2  handlers.o(i.__scatterload_null)
     .ARM.__AT_0x08000BFC                     0x08000bfc   Section        4  bootloader.o(.ARM.__AT_0x08000BFC)
     i.WriteFlash                             0x08000c00   Section        0  flash.o(i.WriteFlash)
-    i.WriteOption                            0x08000ca0   Section        0  flash.o(i.WriteOption)
-    i.WriteProtect                           0x08000d90   Section        0  bootloader.o(i.WriteProtect)
-    i.__scatterload_copy                     0x08000e00   Section       14  handlers.o(i.__scatterload_copy)
-    i.__scatterload_zeroinit                 0x08000e0e   Section       14  handlers.o(i.__scatterload_zeroinit)
-    i.main                                   0x08000e1c   Section        0  main.o(i.main)
-    .constdata                               0x08000e64   Section       12  bootloader.o(.constdata)
-    .constdata                               0x08000e70   Section       12  py32f003xx_ll_start_kit.o(.constdata)
+    i.WriteMemory                            0x08000ca0   Section        0  bootloader.o(i.WriteMemory)
+    i.WriteOption                            0x08000d38   Section        0  flash.o(i.WriteOption)
+    i.__scatterload_copy                     0x08000e28   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_zeroinit                 0x08000e36   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i.main                                   0x08000e44   Section        0  main.o(i.main)
+    .constdata                               0x08000e8c   Section       12  bootloader.o(.constdata)
+    .constdata                               0x08000e98   Section       12  py32f003xx_ll_start_kit.o(.constdata)
     .ARM.__at_0x20000000                     0x20000000   Section      192  system_py32f0xx.o(.ARM.__at_0x20000000)
     .data                                    0x200000c0   Section        4  system_py32f0xx.o(.data)
     .data                                    0x200000c4   Section        8  py32f003xx_ll_start_kit.o(.data)
@@ -348,40 +349,40 @@ Image Symbol Table
     APP_SystemClockConfig                    0x08000149   Thumb Code    90  bootloader.o(i.APP_SystemClockConfig)
     BSP_PB_GetState                          0x080001ad   Thumb Code    26  py32f003xx_ll_start_kit.o(i.BSP_PB_GetState)
     BSP_PB_Init                              0x080001d1   Thumb Code   158  py32f003xx_ll_start_kit.o(i.BSP_PB_Init)
-    Bootloader_Init                          0x08000289   Thumb Code   244  bootloader.o(i.Bootloader_Init)
-    Bootloader_ProtocolDetection             0x08000395   Thumb Code   498  bootloader.o(i.Bootloader_ProtocolDetection)
-    ExtendedErase                            0x080005a9   Thumb Code   158  bootloader.o(i.ExtendedErase)
-    GetAddressArea                           0x0800064d   Thumb Code   230  bootloader.o(i.GetAddressArea)
-    GetXOR                                   0x08000755   Thumb Code    22  bootloader.o(i.GetXOR)
-    Go                                       0x0800076d   Thumb Code    50  bootloader.o(i.Go)
-    JumpToAddress                            0x080007a9   Thumb Code    28  bootloader.o(i.JumpToAddress)
-    LL_SetSystemCoreClock                    0x0800084d   Thumb Code     6  py32f0xx_ll_utils.o(i.LL_SetSystemCoreClock)
-    MassErase                                0x08000859   Thumb Code    54  flash.o(i.MassErase)
-    PageErase                                0x08000899   Thumb Code   146  flash.o(i.PageErase)
-    ReadMemory                               0x08000939   Thumb Code   190  bootloader.o(i.ReadMemory)
-    SectorErase                              0x08000a09   Thumb Code    88  flash.o(i.SectorErase)
-    Set_PB5_Level                            0x08000a69   Thumb Code    66  main.o(i.Set_PB5_Level)
-    SystemInit                               0x08000ab5   Thumb Code    30  system_py32f0xx.o(i.SystemInit)
-    USART_ReadByte                           0x08000ae1   Thumb Code    22  usart.o(i.USART_ReadByte)
-    USART_SendByte                           0x08000afd   Thumb Code    14  usart.o(i.USART_SendByte)
-    WDG_Init                                 0x08000b11   Thumb Code    30  wdg.o(i.WDG_Init)
-    WDG_Refresh                              0x08000b41   Thumb Code    18  wdg.o(i.WDG_Refresh)
-    WriteMemory                              0x08000b61   Thumb Code   148  bootloader.o(i.WriteMemory)
-    __scatterload_null                       0x08000bf9   Thumb Code     2  handlers.o(i.__scatterload_null)
+    Bootloader_Init                          0x08000289   Thumb Code   268  bootloader.o(i.Bootloader_Init)
+    Bootloader_ProtocolDetection             0x080003b5   Thumb Code   498  bootloader.o(i.Bootloader_ProtocolDetection)
+    ExtendedErase                            0x080005c9   Thumb Code   158  bootloader.o(i.ExtendedErase)
+    GetAddressArea                           0x0800066d   Thumb Code   230  bootloader.o(i.GetAddressArea)
+    GetXOR                                   0x08000775   Thumb Code    22  bootloader.o(i.GetXOR)
+    Go                                       0x0800078d   Thumb Code    50  bootloader.o(i.Go)
+    JumpToAddress                            0x080007c9   Thumb Code    28  bootloader.o(i.JumpToAddress)
+    LL_SetSystemCoreClock                    0x0800086d   Thumb Code     6  py32f0xx_ll_utils.o(i.LL_SetSystemCoreClock)
+    MassErase                                0x08000879   Thumb Code    54  flash.o(i.MassErase)
+    PageErase                                0x080008b9   Thumb Code   146  flash.o(i.PageErase)
+    ReadMemory                               0x08000959   Thumb Code   190  bootloader.o(i.ReadMemory)
+    SectorErase                              0x08000a29   Thumb Code    88  flash.o(i.SectorErase)
+    Set_PB5_Level                            0x08000a89   Thumb Code    66  main.o(i.Set_PB5_Level)
+    SystemInit                               0x08000ad5   Thumb Code    30  system_py32f0xx.o(i.SystemInit)
+    USART_ReadByte                           0x08000b01   Thumb Code    22  usart.o(i.USART_ReadByte)
+    USART_SendByte                           0x08000b1d   Thumb Code    14  usart.o(i.USART_SendByte)
+    WDG_Init                                 0x08000b31   Thumb Code    30  wdg.o(i.WDG_Init)
+    WDG_Refresh                              0x08000b61   Thumb Code    18  wdg.o(i.WDG_Refresh)
+    WriteProtect                             0x08000b81   Thumb Code    98  bootloader.o(i.WriteProtect)
+    __scatterload_null                       0x08000bf1   Thumb Code     2  handlers.o(i.__scatterload_null)
     BID_DATA                                 0x08000bfc   Data           4  bootloader.o(.ARM.__AT_0x08000BFC)
     WriteFlash                               0x08000c01   Thumb Code   150  flash.o(i.WriteFlash)
-    WriteOption                              0x08000ca1   Thumb Code   224  flash.o(i.WriteOption)
-    WriteProtect                             0x08000d91   Thumb Code    98  bootloader.o(i.WriteProtect)
-    __scatterload_copy                       0x08000e01   Thumb Code    14  handlers.o(i.__scatterload_copy)
-    __scatterload_zeroinit                   0x08000e0f   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
-    $Super$$main                             0x08000e1d   Thumb Code    60  main.o(i.main)
-    BOOTLOADER_CMD                           0x08000e64   Data          12  bootloader.o(.constdata)
-    BUTTON_IRQn                              0x08000e70   Data           1  py32f003xx_ll_start_kit.o(.constdata)
-    LED_PIN                                  0x08000e72   Data           2  py32f003xx_ll_start_kit.o(.constdata)
-    BUTTON_PIN                               0x08000e74   Data           2  py32f003xx_ll_start_kit.o(.constdata)
-    BUTTON_EXTI_LINE                         0x08000e78   Data           4  py32f003xx_ll_start_kit.o(.constdata)
-    Region$$Table$$Base                      0x08000e7c   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08000e9c   Number         0  anon$$obj.o(Region$$Table)
+    WriteMemory                              0x08000ca1   Thumb Code   148  bootloader.o(i.WriteMemory)
+    WriteOption                              0x08000d39   Thumb Code   224  flash.o(i.WriteOption)
+    __scatterload_copy                       0x08000e29   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_zeroinit                   0x08000e37   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    $Super$$main                             0x08000e45   Thumb Code    60  main.o(i.main)
+    BOOTLOADER_CMD                           0x08000e8c   Data          12  bootloader.o(.constdata)
+    BUTTON_IRQn                              0x08000e98   Data           1  py32f003xx_ll_start_kit.o(.constdata)
+    LED_PIN                                  0x08000e9a   Data           2  py32f003xx_ll_start_kit.o(.constdata)
+    BUTTON_PIN                               0x08000e9c   Data           2  py32f003xx_ll_start_kit.o(.constdata)
+    BUTTON_EXTI_LINE                         0x08000ea0   Data           4  py32f003xx_ll_start_kit.o(.constdata)
+    Region$$Table$$Base                      0x08000ea4   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08000ec4   Number         0  anon$$obj.o(Region$$Table)
     VECT_SRAM_TAB                            0x20000000   Data         192  system_py32f0xx.o(.ARM.__at_0x20000000)
     SystemCoreClock                          0x200000c0   Data           4  system_py32f0xx.o(.data)
     LED_PORT                                 0x200000c4   Data           4  py32f003xx_ll_start_kit.o(.data)
@@ -397,9 +398,9 @@ Memory Map of the image
 
   Image Entry point : 0x080000c1
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00000f68, Max: 0x00010000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00000f90, Max: 0x00010000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00000e9c, Max: 0x00010000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00000ec4, Max: 0x00010000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -420,56 +421,56 @@ Memory Map of the image
     0x08000148   0x08000148   0x00000064   Code   RO          155    i.APP_SystemClockConfig  bootloader.o
     0x080001ac   0x080001ac   0x00000024   Code   RO          385    i.BSP_PB_GetState   py32f003xx_ll_start_kit.o
     0x080001d0   0x080001d0   0x000000b8   Code   RO          386    i.BSP_PB_Init       py32f003xx_ll_start_kit.o
-    0x08000288   0x08000288   0x0000010c   Code   RO          156    i.Bootloader_Init   bootloader.o
-    0x08000394   0x08000394   0x00000214   Code   RO          157    i.Bootloader_ProtocolDetection  bootloader.o
-    0x080005a8   0x080005a8   0x000000a4   Code   RO          158    i.ExtendedErase     bootloader.o
-    0x0800064c   0x0800064c   0x00000108   Code   RO          159    i.GetAddressArea    bootloader.o
-    0x08000754   0x08000754   0x00000016   Code   RO          160    i.GetXOR            bootloader.o
-    0x0800076a   0x0800076a   0x00000002   PAD
-    0x0800076c   0x0800076c   0x0000003c   Code   RO          161    i.Go                bootloader.o
-    0x080007a8   0x080007a8   0x00000020   Code   RO          162    i.JumpToAddress     bootloader.o
-    0x080007c8   0x080007c8   0x0000001a   Code   RO          163    i.LL_GPIO_SetAFPin_0_7  bootloader.o
-    0x080007e2   0x080007e2   0x00000014   Code   RO          164    i.LL_GPIO_SetPinMode  bootloader.o
-    0x080007f6   0x080007f6   0x00000014   Code   RO          389    i.LL_GPIO_SetPinMode  py32f003xx_ll_start_kit.o
-    0x0800080a   0x0800080a   0x00000014   Code   RO          165    i.LL_GPIO_SetPinPull  bootloader.o
-    0x0800081e   0x0800081e   0x00000014   Code   RO          390    i.LL_GPIO_SetPinPull  py32f003xx_ll_start_kit.o
-    0x08000832   0x08000832   0x00000002   PAD
-    0x08000834   0x08000834   0x00000018   Code   RO          392    i.LL_IOP_GRP1_EnableClock  py32f003xx_ll_start_kit.o
-    0x0800084c   0x0800084c   0x0000000c   Code   RO          588    i.LL_SetSystemCoreClock  py32f0xx_ll_utils.o
-    0x08000858   0x08000858   0x00000040   Code   RO          279    i.MassErase         flash.o
-    0x08000898   0x08000898   0x000000a0   Code   RO          280    i.PageErase         flash.o
-    0x08000938   0x08000938   0x000000d0   Code   RO          166    i.ReadMemory        bootloader.o
-    0x08000a08   0x08000a08   0x00000060   Code   RO          281    i.SectorErase       flash.o
-    0x08000a68   0x08000a68   0x0000004c   Code   RO           75    i.Set_PB5_Level     main.o
-    0x08000ab4   0x08000ab4   0x0000002c   Code   RO            5    i.SystemInit        system_py32f0xx.o
-    0x08000ae0   0x08000ae0   0x0000001c   Code   RO          326    i.USART_ReadByte    usart.o
-    0x08000afc   0x08000afc   0x00000014   Code   RO          327    i.USART_SendByte    usart.o
-    0x08000b10   0x08000b10   0x00000030   Code   RO          352    i.WDG_Init          wdg.o
-    0x08000b40   0x08000b40   0x00000020   Code   RO          353    i.WDG_Refresh       wdg.o
-    0x08000b60   0x08000b60   0x00000098   Code   RO          167    i.WriteMemory       bootloader.o
-    0x08000bf8   0x08000bf8   0x00000002   Code   RO          654    i.__scatterload_null  mc_p.l(handlers.o)
-    0x08000bfa   0x08000bfa   0x00000002   PAD
+    0x08000288   0x08000288   0x0000012c   Code   RO          156    i.Bootloader_Init   bootloader.o
+    0x080003b4   0x080003b4   0x00000214   Code   RO          157    i.Bootloader_ProtocolDetection  bootloader.o
+    0x080005c8   0x080005c8   0x000000a4   Code   RO          158    i.ExtendedErase     bootloader.o
+    0x0800066c   0x0800066c   0x00000108   Code   RO          159    i.GetAddressArea    bootloader.o
+    0x08000774   0x08000774   0x00000016   Code   RO          160    i.GetXOR            bootloader.o
+    0x0800078a   0x0800078a   0x00000002   PAD
+    0x0800078c   0x0800078c   0x0000003c   Code   RO          161    i.Go                bootloader.o
+    0x080007c8   0x080007c8   0x00000020   Code   RO          162    i.JumpToAddress     bootloader.o
+    0x080007e8   0x080007e8   0x0000001a   Code   RO          163    i.LL_GPIO_SetAFPin_0_7  bootloader.o
+    0x08000802   0x08000802   0x00000014   Code   RO          164    i.LL_GPIO_SetPinMode  bootloader.o
+    0x08000816   0x08000816   0x00000014   Code   RO          389    i.LL_GPIO_SetPinMode  py32f003xx_ll_start_kit.o
+    0x0800082a   0x0800082a   0x00000014   Code   RO          165    i.LL_GPIO_SetPinPull  bootloader.o
+    0x0800083e   0x0800083e   0x00000014   Code   RO          390    i.LL_GPIO_SetPinPull  py32f003xx_ll_start_kit.o
+    0x08000852   0x08000852   0x00000002   PAD
+    0x08000854   0x08000854   0x00000018   Code   RO          392    i.LL_IOP_GRP1_EnableClock  py32f003xx_ll_start_kit.o
+    0x0800086c   0x0800086c   0x0000000c   Code   RO          588    i.LL_SetSystemCoreClock  py32f0xx_ll_utils.o
+    0x08000878   0x08000878   0x00000040   Code   RO          279    i.MassErase         flash.o
+    0x080008b8   0x080008b8   0x000000a0   Code   RO          280    i.PageErase         flash.o
+    0x08000958   0x08000958   0x000000d0   Code   RO          166    i.ReadMemory        bootloader.o
+    0x08000a28   0x08000a28   0x00000060   Code   RO          281    i.SectorErase       flash.o
+    0x08000a88   0x08000a88   0x0000004c   Code   RO           75    i.Set_PB5_Level     main.o
+    0x08000ad4   0x08000ad4   0x0000002c   Code   RO            5    i.SystemInit        system_py32f0xx.o
+    0x08000b00   0x08000b00   0x0000001c   Code   RO          326    i.USART_ReadByte    usart.o
+    0x08000b1c   0x08000b1c   0x00000014   Code   RO          327    i.USART_SendByte    usart.o
+    0x08000b30   0x08000b30   0x00000030   Code   RO          352    i.WDG_Init          wdg.o
+    0x08000b60   0x08000b60   0x00000020   Code   RO          353    i.WDG_Refresh       wdg.o
+    0x08000b80   0x08000b80   0x00000070   Code   RO          168    i.WriteProtect      bootloader.o
+    0x08000bf0   0x08000bf0   0x00000002   Code   RO          654    i.__scatterload_null  mc_p.l(handlers.o)
+    0x08000bf2   0x08000bf2   0x0000000a   PAD
     0x08000bfc   0x08000bfc   0x00000004   Data   RO          169    .ARM.__AT_0x08000BFC  bootloader.o
     0x08000c00   0x08000c00   0x000000a0   Code   RO          282    i.WriteFlash        flash.o
-    0x08000ca0   0x08000ca0   0x000000f0   Code   RO          283    i.WriteOption       flash.o
-    0x08000d90   0x08000d90   0x00000070   Code   RO          168    i.WriteProtect      bootloader.o
-    0x08000e00   0x08000e00   0x0000000e   Code   RO          653    i.__scatterload_copy  mc_p.l(handlers.o)
-    0x08000e0e   0x08000e0e   0x0000000e   Code   RO          655    i.__scatterload_zeroinit  mc_p.l(handlers.o)
-    0x08000e1c   0x08000e1c   0x00000048   Code   RO           76    i.main              main.o
-    0x08000e64   0x08000e64   0x0000000c   Data   RO          171    .constdata          bootloader.o
-    0x08000e70   0x08000e70   0x0000000c   Data   RO          396    .constdata          py32f003xx_ll_start_kit.o
-    0x08000e7c   0x08000e7c   0x00000020   Data   RO          651    Region$$Table       anon$$obj.o
+    0x08000ca0   0x08000ca0   0x00000098   Code   RO          167    i.WriteMemory       bootloader.o
+    0x08000d38   0x08000d38   0x000000f0   Code   RO          283    i.WriteOption       flash.o
+    0x08000e28   0x08000e28   0x0000000e   Code   RO          653    i.__scatterload_copy  mc_p.l(handlers.o)
+    0x08000e36   0x08000e36   0x0000000e   Code   RO          655    i.__scatterload_zeroinit  mc_p.l(handlers.o)
+    0x08000e44   0x08000e44   0x00000048   Code   RO           76    i.main              main.o
+    0x08000e8c   0x08000e8c   0x0000000c   Data   RO          171    .constdata          bootloader.o
+    0x08000e98   0x08000e98   0x0000000c   Data   RO          396    .constdata          py32f003xx_ll_start_kit.o
+    0x08000ea4   0x08000ea4   0x00000020   Data   RO          651    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08000e9c, Size: 0x00000650, Max: 0x00002000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08000ec4, Size: 0x00000650, Max: 0x00002000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x08000e9c   0x000000c0   Data   RW            6    .ARM.__at_0x20000000  system_py32f0xx.o
-    0x200000c0   0x08000f5c   0x00000004   Data   RW            9    .data               system_py32f0xx.o
-    0x200000c4   0x08000f60   0x00000008   Data   RW          397    .data               py32f003xx_ll_start_kit.o
+    0x20000000   0x08000ec4   0x000000c0   Data   RW            6    .ARM.__at_0x20000000  system_py32f0xx.o
+    0x200000c0   0x08000f84   0x00000004   Data   RW            9    .data               system_py32f0xx.o
+    0x200000c4   0x08000f88   0x00000008   Data   RW          397    .data               py32f003xx_ll_start_kit.o
     0x200000cc        -       0x00000180   Zero   RW          170    .bss                bootloader.o
-    0x2000024c   0x08000f68   0x00000004   PAD
+    0x2000024c   0x08000f90   0x00000004   PAD
     0x20000250        -       0x00000400   Zero   RW           66    STACK               startup_py32f003xx.o
 
 
@@ -480,7 +481,7 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-      1980        158         16          0        384      42731   bootloader.o
+      2012        166         16          0        384      42775   bootloader.o
        720         58          0          0          0       5133   flash.o
        148         22          0          0          0      13287   main.o
        284         42         12          8          0      24707   py32f003xx_ll_start_kit.o
@@ -491,7 +492,7 @@ Image component sizes
         80         32          0          0          0        957   wdg.o
 
     ----------------------------------------------------------------------
-      3396        360        252        204       1412     251532   Object Totals
+      3428        368        252        204       1412     251576   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          4          0          0          0          4          0   (incl. Padding)
 
@@ -512,8 +513,8 @@ Image component sizes
         36          8          0          0          0         68   init.o
 
     ----------------------------------------------------------------------
-        92         16          0          0          0         68   Library Totals
-         2          0          0          0          0          0   (incl. Padding)
+       100         16          0          0          0         68   Library Totals
+        10          0          0          0          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -522,7 +523,7 @@ Image component sizes
         90         16          0          0          0         68   mc_p.l
 
     ----------------------------------------------------------------------
-        92         16          0          0          0         68   Library Totals
+       100         16          0          0          0         68   Library Totals
 
     ----------------------------------------------------------------------
 
@@ -531,15 +532,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      3488        376        252        204       1412     250432   Grand Totals
-      3488        376        252        204       1412     250432   ELF Image Totals
-      3488        376        252        204          0          0   ROM Totals
+      3528        384        252        204       1412     250476   Grand Totals
+      3528        384        252        204       1412     250476   ELF Image Totals
+      3528        384        252        204          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 3740 (   3.65kB)
+    Total RO  Size (Code + RO Data)                 3780 (   3.69kB)
     Total RW  Size (RW Data + ZI Data)              1616 (   1.58kB)
-    Total ROM Size (Code + RO Data + RW Data)       3944 (   3.85kB)
+    Total ROM Size (Code + RO Data + RW Data)       3984 (   3.89kB)
 
 ==============================================================================
 
