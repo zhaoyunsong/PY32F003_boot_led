@@ -15,3 +15,5 @@
 *.eide-template
 *.vscode
 *.log
+*.hex
+*.map
