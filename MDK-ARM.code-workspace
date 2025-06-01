@@ -8,7 +8,10 @@
 		"files.associations": {
 			"flash.h": "c",
 			"py32f003xx_ll_start_kit.h": "c",
-			"bootloader.h": "c"
+			"bootloader.h": "c",
+			"py32f0xx_ll_crc.h": "c",
+			"usart.h": "c",
+			"main.h": "c"
 		}
 	},
     "extensions": {}
