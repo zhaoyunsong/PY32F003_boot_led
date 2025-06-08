@@ -11,7 +11,10 @@
 			"bootloader.h": "c",
 			"py32f0xx_ll_crc.h": "c",
 			"usart.h": "c",
-			"main.h": "c"
+			"main.h": "c",
+			"py32f0xx_ll_rcc.h": "c",
+			"py32f0xx.h": "c",
+			"py32f0xx_ll_tim.h": "c"
 		}
 	},
     "extensions": {}

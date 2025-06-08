@@ -6,7 +6,7 @@
   "virtualFolder": {
     "name": "<virtual_root>",
     "files": [],
-    "folders": [
+    "folders": [ 
       {
         "name": "Common",
         "files": [

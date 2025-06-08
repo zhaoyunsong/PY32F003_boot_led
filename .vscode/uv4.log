@@ -1,4 +1,5 @@
 Load "d:\\ÎÄµµ\\Ð¾Æ¬\\ÆÕÈ½µ¥Æ¬»ú\\PY32F0xx_Firmware_V1.4.4\\Projects\\PY32F003-STK\\Example_LL\\USART\\PY32F003xx_IAP_LL\\MDK-ARM\\Objects\\PY32F003_boot.axf" 
-Erase Failed!Cannot access Memory (@ 0xe000edf0, Read, Acc Size: 4 Byte)
-Error: Flash Download failed  -  "Cortex-M0+"
-Flash Load finished at 12:41:36
+_____^
+*** error 56: cannot open file
+Error: Flash Download failed  -  Could not load file 'd:\ÎÄµµ\Ð¾Æ¬\ÆÕÈ½µ¥Æ¬»ú\PY32F0xx_Firmware_V1.4.4\Projects\PY32F003-STK\Example_LL\USART\PY32F003xx_IAP_LL\MDK-ARM\Objects\PY32F003_boot.axf'
+Flash Load finished at 01:38:13
